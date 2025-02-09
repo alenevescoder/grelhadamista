@@ -1,0 +1,469 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+main {
+	flex: 1;
+	padding: 10px;
+}
+
+.header {
+	background-image: url("../img/bg.jpg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 50px 20px;
+	color: white;
+}
+
+.header h1 {
+	font-size: 70px;
+	font-family: "Dancing Script", serif;
+	margin-bottom: 5px;
+}
+
+.header span {
+	font-size: 20px;
+	display: block;
+	color: rgba(245, 242, 242, 0.8);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 10px;
+	max-width: 1200px;
+	margin: auto;
+	width: 100%;
+}
+
+.navbar {
+	width: 100%;
+	background: #f8f8f8;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 0;
+	z-index: 10;
+	margin-top: -10px;
+}
+
+.navbar ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	width: 100%;
+	justify-content: center;
+}
+
+.navbar ul li {
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+}
+
+.navbar ul li a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 15px 25px;
+	transition: 0.3s;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+}
+
+.navbar ul li a:hover {
+	color: darkred;
+	font-weight: bold;
+}
+
+.content-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	margin-left: 270px;
+}
+
+.box-inicio,
+.box-quemsomos,
+.box-pedidos,
+.box-horarios,
+.box-contatos {
+	width: 100%;
+	max-width: 950px;
+	min-height: 500px;
+	text-align: center;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-inicio h1,
+.box-pedidos h1,
+.box-contatos h1 {
+	margin-bottom: 50px;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.box-pedidos ul,
+.box-contatos ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.box-pedidos ul li,
+.box-contatos ul li {
+	width: 100%;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.box-pedidos ul li a,
+.box-contatos ul li a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+}
+
+.foto-quem-somos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	gap: 50px;
+	margin: 20px auto;
+	align-items: center;
+}
+
+.foto-quem-somos img {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.box-pedidos1 {
+	text-align: center;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 360px;
+}
+
+.contatos {
+	text-align: center;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 360px;
+}
+
+.container p {
+	font-size: 20px;
+}
+
+.instagram:hover {
+	background: linear-gradient(
+		45deg,
+		rgba(238, 36, 118, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+}
+
+.instagram:hover * {
+	color: white;
+}
+
+.ubereats {
+	color: inherit;
+	text-decoration: none;
+	width: auto;
+	height: auto;
+	display: block;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.ubereats a {
+	color: black;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s ease;
+	display: block;
+}
+
+.ubereats:hover {
+	background: rgb(38, 133, 38);
+	color: inherit;
+}
+
+.ubereats,
+.glovo,
+.bolt,
+.whatsapp {
+	font-family: "Lexend Giga", serif;
+}
+
+.glovo {
+	color: inherit;
+	text-decoration: none;
+	width: auto;
+	height: auto;
+	display: block;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.glovo:hover {
+	background-color: yellow;
+	color: inherit;
+}
+
+.glovo:hover * {
+	color: green;
+}
+
+.glovo a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.bolt {
+	color: inherit;
+	text-decoration: none;
+	width: auto;
+	height: auto;
+	display: block;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.bolt:hover {
+	background: rgb(33, 197, 33);
+	color: inherit;
+}
+
+.bolt:hover * {
+	color: rgb(255, 255, 255);
+}
+
+.bolt a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	display: block;
+}
+
+.whatsapp {
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp:hover * {
+	color: rgb(255, 255, 255);
+}
+
+.whatsapp:hover {
+	background: green;
+}
+
+.whatsapp a {
+	color: black;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: all 0.2s ease;
+}
+
+a {
+	font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .box-inicio, .box-quemsomos, .box-pedidos, .box-horarios, .box-contatos {
+        max-width: calc(100% - 10px);
+        padding: 5px;
+        margin: 0 5px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .box-inicio h1 {
+        font-size: 45px;
+    }
+
+    .box-inicio p {
+        margin-top: 15px;
+    }
+
+    .foto-quem-somos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box-horarios, .box-pedidos, .box-contatos {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        min-height: 400px;
+    }
+
+    .box-pedidos h1, .box-contatos h1, .box-horarios h1 {
+        margin-top: -25px;
+    }
+
+    .box-pedidos1 {
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .box-inicio, .box-quemsomos, .box-pedidos, .box-horarios, .box-contatos {
+        max-width: calc(100% - 10px);
+        padding: 5px;
+        margin: 0 5px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .foto-quem-somos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .foto-quem-somos img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .instagram {
+        font-size: 16px;
+    }
+
+.box-pedidos h1, .box-horarios h1 {
+        margin-top: -5px;
+    }
+
+    .box-contatos, .box-pedidos, .box-horarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        min-height: 400px;
+    }
+
+    .box-pedidos1 {
+        margin-top: -10px;
+    }
+}
+
+
+footer {
+	text-align: center;
+	background: black;
+	color: white;
+	padding: 10px;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
