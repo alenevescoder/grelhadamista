@@ -137,7 +137,7 @@ main {
 .box-pedidos h1,
 .box-contatos h1 {
 	margin-bottom: 50px;
-	font-size: 20px;
+	font-size: 30px;
 	margin-top: 10px;
 }
 
@@ -359,7 +359,7 @@ a {
     }
 
     .box-inicio h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .box-inicio p {
@@ -395,6 +395,10 @@ a {
     .header h1 {
         font-size: 28px;
         margin-bottom: 5px;
+    }
+
+    .box-inicio h1 {
+        font-size: 26px;
     }
 
     .navbar {
